@@ -1,0 +1,10 @@
+---
+- name: Install tomcat pkg on target systems
+  apt:
+    name: tomcat8
+    state: present
+
+- name: Start service
+  service:
+    name: tomcat8
+    state: started

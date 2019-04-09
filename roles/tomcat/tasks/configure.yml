@@ -1,0 +1,5 @@
+---
+- name: Configure server Tomcat instance with new deployments
+  service:
+    name: tomcat8
+    state: restarted

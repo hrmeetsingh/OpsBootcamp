@@ -1,0 +1,12 @@
+---
+- name: Verify deployment is successful, page is up
+  uri: url=http://localhost:80
+    return_content=yes
+  register: webpage
+  failed_when: "'Apache2' not in webpage.content"
+
+- name: Verify deployment is succesful, page headers are correct
+  uri: url=http://localhost:80
+    return_content=yes
+  register: webpage
+  failed_when: "'text/html' not in webpage.content_type"

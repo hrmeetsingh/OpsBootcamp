@@ -1,0 +1,5 @@
+---
+- name: Configure server Apache2 instance with new deployments
+  service:
+    name: apache2
+    state: restarted

@@ -1,0 +1,13 @@
+---
+- name: Check if webapps folder exists
+  stat:
+    path: /var/lib/tomcat8/webapp/ROOT
+  register: stat_result
+
+- name: Copy artifacts to tomcat folders
+  copy:
+    src: files/index.html
+    dest: /var/lib/tomcat8/webapps/ROOT/
+    owner: root
+    group: root
+    mode: 0755

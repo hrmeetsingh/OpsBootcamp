@@ -1,0 +1,3 @@
+[local]
+127.0.0.1 ansible_user=root ansible_port=2222 ansible_python_interpreter=/usr/bin/python3
+192.168.43.152  ansible_user=root

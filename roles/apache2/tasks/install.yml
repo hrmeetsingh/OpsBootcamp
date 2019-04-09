@@ -1,0 +1,10 @@
+---
+- name: Install apache2 pkg on target systems
+  apt:
+    name: apache2
+    state: present
+
+- name: Start apache2 service
+  service:
+    name: apache2
+    state: started
