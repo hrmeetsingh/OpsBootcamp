@@ -14,7 +14,7 @@ QA Bootcamp repo.
 - Confirm new image is created by following command -
 `docker images`
 - Bring up Docker container
-`docker run -it -p 2222:22 -p 8081:80 <containerId>`
+`docker run -it -p 2222:22 -p 8081:80 <imageId>`
 
 ### Setup an Ubuntu VM
 - Use virtualbox to bring up a VM of Ubuntu
