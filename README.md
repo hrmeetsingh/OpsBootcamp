@@ -1,5 +1,11 @@
 # OpsBootcamp
-Repo for Bootcamp material
+QA Bootcamp repo. 
+
+## What's covered 
+
+  - Docker container setup
+  - Ansible setup for installation and configuration of webserver on target systems
+  - Ansible tests for verifying installation and configuration works
 
 ## Setup
 ### Setup Docker container
